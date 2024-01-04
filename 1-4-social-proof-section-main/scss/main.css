@@ -1,0 +1,244 @@
+:root {
+  --ff-sans: "League Spartan", sans-serif;
+  --fw-light: 400;
+  --fw-normal: 500;
+  --fw-bold: 700;
+  --clr-magenta: hsl(300, 43%, 22%);
+  --clr-pink: hsl(333, 80%, 67%);
+  --clr-neutral-700: hsl(303, 10%, 53%);
+  --clr-neutral-300: hsl(300, 24%, 96%);
+  --clr-white: hsl(0, 0%, 100%);
+  --fs-400: 0.9375rem;
+  --fs-500: 1.125rem;
+  --fs-900: 2.5rem;
+  --br: 0.5rem;
+}
+@media (min-width: 700px) {
+  :root {
+    --fs-900: 3.5rem;
+  }
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  font-family: var(--ff-sans);
+  font-size: var(--fs-400);
+  padding-block: 5rem;
+  color: var(--clr-magenta);
+  display: grid;
+  align-items: center;
+  background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  background-size: max(50%, 375px), max(80%, 375px);
+}
+
+h1 {
+  font-size: var(--fs-900);
+  line-height: 0.8;
+  max-width: 12ch;
+  margin-inline: auto;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: var(--fs-500);
+}
+
+@media (max-width: 699px) {
+  h1, .lead {
+    text-align: center;
+  }
+}
+@media (min-width: 700px) {
+  h1 {
+    margin-left: 0;
+  }
+}
+main {
+  display: grid;
+  gap: 3rem 1rem;
+}
+
+@media (min-width: 700px) {
+  main {
+    grid-template-columns: 1fr 1.5fr;
+  }
+  .intro {
+    grid-column: 1/2;
+  }
+  .ratings {
+    grid-column: 2/3;
+    align-self: center;
+  }
+  .cards {
+    grid-column: 1/-1;
+  }
+}
+.wrapper {
+  max-width: 1110px;
+  padding-inline: 1.5rem;
+  margin-inline: auto;
+}
+
+.flow-content > * + * {
+  margin-top: var(--flow-space, 1rem);
+}
+
+.flex {
+  display: flex;
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media (min-width: 700px) {
+  .split {
+    flex-direction: row;
+  }
+}
+
+.a-center {
+  align-items: center;
+}
+
+@media (min-width: 700px) {
+  .cards {
+    margin-top: 2rem;
+  }
+}
+
+.card {
+  --spacer: 1.5rem;
+  background-color: var(--clr-magenta);
+  color: var(--clr-white);
+  padding: 2rem;
+  border-radius: var(--br);
+  max-width: 25rem;
+  font-weight: var(--fw-normal);
+  margin-inline: auto;
+}
+.card:nth-child(1) {
+  transform: translateY(-1rem);
+}
+.card:nth-child(3) {
+  transform: translateY(1rem);
+}
+.card img {
+  width: 2.5rem;
+  border-radius: 50%;
+  margin-right: var(--spacer);
+}
+.card .name {
+  font-weight: var(--fw-bold);
+}
+.card .status {
+  color: var(--clr-pink);
+}
+.card .quote {
+  margin-top: var(--spacer);
+}
+
+ul.ratings li {
+  background-color: var(--clr-neutral-300);
+  font-weight: var(--fw-bold);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  margin-inline: auto;
+  max-width: 25rem;
+  gap: 0;
+  align-items: center;
+}
+ul.ratings li::before {
+  content: "";
+  width: 100px;
+  height: 1rem;
+  margin: 0 auto;
+  display: block;
+  background-image: url(../../images/icon-star.svg);
+  margin-bottom: 0.5rem;
+  background-repeat: space;
+}
+@media (min-width: 700px) {
+  ul.ratings li {
+    justify-content: left;
+    gap: 2rem;
+    margin-right: 3rem;
+  }
+  ul.ratings li::before {
+    margin: 0;
+  }
+  ul.ratings li:first-of-type {
+    transform: translateX(-3rem);
+  }
+  ul.ratings li:last-of-type {
+    transform: translateX(3rem);
+  }
+}/*# sourceMappingURL=main.css.map */

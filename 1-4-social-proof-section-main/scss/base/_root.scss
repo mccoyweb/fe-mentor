@@ -1,0 +1,27 @@
+:root { 
+  --ff-sans: 'League Spartan', sans-serif;
+
+  --fw-light: 400;
+  --fw-normal: 500;
+  --fw-bold: 700;
+
+  --clr-magenta: hsl(300, 43%, 22%);
+  --clr-pink: hsl(333, 80%, 67%);
+
+  --clr-neutral-700: hsl(303, 10%, 53%);
+  --clr-neutral-300: hsl(300, 24%, 96%);
+
+  --clr-white: hsl(0, 0%, 100%);
+
+  --fs-400: 0.9375rem;
+  --fs-500: 1.125rem;
+  --fs-900: 2.5rem;
+
+  --br: 0.5rem;
+
+  $breakpoint-desktop: 700px; 
+
+  @media (min-width: $breakpoint-desktop) {
+    --fs-900: 3.5rem;
+  }
+}

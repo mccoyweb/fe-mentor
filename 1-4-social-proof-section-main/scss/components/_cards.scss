@@ -1,0 +1,42 @@
+.cards {
+  @media (min-width: 700px) {
+    margin-top: 2rem;
+  }
+}
+
+.card {
+  --spacer: 1.5rem;
+  background-color: var(--clr-magenta);
+  color: var(--clr-white);
+  padding: 2rem;
+  border-radius: var(--br);
+  max-width: 25rem;
+  font-weight: var(--fw-normal);
+  margin-inline: auto;
+
+  &:nth-child(1) {
+    transform: translateY(-1rem);
+  }
+
+  &:nth-child(3) {
+    transform: translateY(1rem);
+  }
+  
+  img {
+    width: 2.5rem;
+    border-radius: 50%;
+    margin-right: var(--spacer);
+  }
+
+  .name {
+    font-weight: var(--fw-bold);
+  }
+
+  .status {
+    color: var(--clr-pink);
+  }
+
+  .quote {
+    margin-top: var(--spacer);
+  }
+}
