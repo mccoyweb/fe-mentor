@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Huddle landing page with curved sections</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="flex">
+      <div>
+        <img class="logo" src="images/logo.svg" alt="">
+      </div>
+      <button class="btn btn--secondary">Try it free</button>
+    </div>
+  </header>
+  <main>
+    <div>
+      <section class="wrapper intro spacing-large">
+        <div>
+          <h1 class="page-title">Build The Community Your Fans Will Love</h1>
+          <p class="intro__text">
+            Huddle re-imagines the way we build communities. You have a voice, but so does
+            your audience. Create connections with your users as you engage in genuine discussion.
+          </p>
+          <button class="btn btn--primary">Get Started For Free</button>
+        </div>
+      </section>
+      <section class="wrapper mockup spacing-large">
+        <div>
+          <img src="images/screen-mockups.svg" alt=""></div>
+      </section>
+      <section class="wrapper community-numbers spacing-large">
+        <div class="grid-flow grid-flow--two">
+          <div class="community-numbers__section">
+            <img src="images/icon-communities.svg" alt="">
+            <p>
+              <span>1.4k+</span>
+              Communities Formed
+            </p>
+          </div>
+          <div class="community-numbers__section">
+            <img src="images/icon-messages.svg" alt="">
+            <p>
+              <span>2.7m+</span>
+              Messages Sent
+            </p>
+          </div>
+        </div>
+      </section>
+      <picture>
+        <source srcset="images/bg-section-top-desktop-1.svg" media="(min-width: 666px)">
+        <img class="bg-img" src="images/bg-section-top-mobile-1.svg" alt="">
+      </picture>
+      <section class="wrapper illustration illustration--dark spacing-large">
+        <div class="grid-flow grid-flow--two grid-reverse">
+          <img src="images/illustration-grow-together.svg" alt="">
+          <div>
+            <h2>Grow Together</h2>
+            <p>
+              Generate meaningful discussions with your audience and build a strong, loyal community.
+              Think of the insightful conversations you miss out on with a feedback form.
+            </p>
+          </div>
+        </div>
+      </section>
+      <picture>
+        <source srcset="images/bg-section-bottom-desktop-1.svg" media="(min-width: 666px)">
+        <img class="bg-img" src="images/bg-section-bottom-mobile-1.svg" alt="">
+      </picture>
+      <section class="wrapper illustration spacing-large">
+        <div class="grid-flow grid-flow--two spacing-extra-large">
+          <img src="images/illustration-flowing-conversation.svg" alt="">
+          <div>
+            <h2>Flowing Conversations</h2>
+            <p>
+              You wouldn't paginate a conversation in real life, so why do it online? Our threads have
+              just-in-time loading for a more natural flow.
+            </p>
+          </div>
+        </div>
+      </section>
+      <picture>
+        <source srcset="images/bg-section-top-desktop-2.svg" media="(min-width: 666px)">
+        <img class="bg-img" src="images/bg-section-top-mobile-2.svg" alt="">
+      </picture>
+      <section class="wrapper illustration illustration--dark spacing-large">
+        <div class="grid-flow grid-flow--two grid-reverse spacing-extra-large">
+          <img src="images/illustration-your-users.svg" alt="">
+          <div>
+            <h2>Your Users</h2>
+            <p>
+              It takes no time at all to integrate Huddle with your app's authentication solution. This means,
+              once signed in to your app, your users can start chatting immediately.
+            </p>
+          </div>
+        </div>
+      </section>
+      <picture>
+        <source srcset="images/bg-section-bottom-desktop-2.svg" media="(min-width: 666px)">
+        <img class="bg-img" src="images/bg-section-bottom-mobile-2.svg" alt="">
+      </picture>
+      <section class="wrapper cta">
+        <div>
+          <h2>Ready To Build Your Community?</h2>
+          <button class="btn btn--primary">Get Started For Free</button>
+        </div>
+      </section>
+    </div>
+  </main>
+  <picture>
+    <source srcset="images/bg-footer-top-desktop.svg" media="(min-width: 666px)">
+    <img class="bg-img" src="images/bg-footer-top-mobile.svg" alt="">
+  </picture>
+  <footer class="page-footer">
+    <div class="wrapper">
+      <div class="grid-flow grid-flow--two grid-reverse">
+        <div class="spacing-large">
+          <h3>Newsletter</h3>
+          <p>
+            To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
+            send you spam or pass on your email address
+          </p>
+          <form action="" method="post" id="newsletter">
+            <input type="email" name="email" id="email" required>
+            <button class="btn btn--primary page-footer__btn">Subscribe</button>
+          </form>
+        </div>
+        <div class="spacing-large">
+          <img class="logo" src="images/logo-white.svg" alt="">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia
+            vestibulum a, ultrices quis sem.
+          </p>
+          <ul class="contacts">
+            <li class="flex">
+              <img src="images/icon-phone.svg" alt="">
+              Phone: +1-543-123-4567
+            </li>
+            <li class="flex">
+              <img src="images/icon-email.svg" alt="">
+              example@huddle.com
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="social">
+        <ul class="social__list flex">
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256">
+            <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,3c-12.15,0 -22,9.85 -22,22c0,11.03 8.125,20.137 18.712,21.728v-15.897h-5.443v-5.783h5.443v-3.848c0,-6.371 3.104,-9.168 8.399,-9.168c2.536,0 3.877,0.188 4.512,0.274v5.048h-3.612c-2.248,0 -3.033,2.131 -3.033,4.533v3.161h6.588l-0.894,5.783h-5.694v15.944c10.738,-1.457 19.022,-10.638 19.022,-21.775c0,-12.15 -9.85,-22 -22,-22z"></path></g></g>
+            </svg>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256">
+              <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M8,3c-2.757,0 -5,2.243 -5,5v8c0,2.757 2.243,5 5,5h8c2.757,0 5,-2.243 5,-5v-8c0,-2.757 -2.243,-5 -5,-5zM8,5h8c1.654,0 3,1.346 3,3v8c0,1.654 -1.346,3 -3,3h-8c-1.654,0 -3,-1.346 -3,-3v-8c0,-1.654 1.346,-3 3,-3zM17,6c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM12,7c-2.757,0 -5,2.243 -5,5c0,2.757 2.243,5 5,5c2.757,0 5,-2.243 5,-5c0,-2.757 -2.243,-5 -5,-5zM12,9c1.654,0 3,1.346 3,3c0,1.654 -1.346,3 -3,3c-1.654,0 -3,-1.346 -3,-3c0,-1.654 1.346,-3 3,-3z"></path></g></g>
+            </svg>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256">
+              <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M28,6.937c-0.957,0.425 -1.985,0.711 -3.064,0.84c1.102,-0.66 1.947,-1.705 2.345,-2.951c-1.03,0.611 -2.172,1.055 -3.388,1.295c-0.973,-1.037 -2.359,-1.685 -3.893,-1.685c-2.946,0 -5.334,2.389 -5.334,5.334c0,0.418 0.048,0.826 0.138,1.215c-4.433,-0.222 -8.363,-2.346 -10.995,-5.574c-0.458,0.788 -0.721,1.704 -0.721,2.683c0,1.85 0.941,3.483 2.372,4.439c-0.874,-0.028 -1.697,-0.268 -2.416,-0.667c0,0.023 0,0.044 0,0.067c0,2.585 1.838,4.741 4.279,5.23c-0.447,0.122 -0.919,0.187 -1.406,0.187c-0.343,0 -0.678,-0.034 -1.003,-0.095c0.679,2.119 2.649,3.662 4.983,3.705c-1.825,1.431 -4.125,2.284 -6.625,2.284c-0.43,0 -0.855,-0.025 -1.273,-0.075c2.361,1.513 5.164,2.396 8.177,2.396c9.812,0 15.176,-8.128 15.176,-15.177c0,-0.231 -0.005,-0.461 -0.015,-0.69c1.043,-0.753 1.948,-1.692 2.663,-2.761z"></path></g></g>
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
