@@ -1,0 +1,37 @@
+body {
+  font-family: var(--ff-primary);
+  color: var(--clr-primary-800);
+}
+
+h1, h2, h3 {
+  font-family: var(--ff-accent);
+  font-weight: var(--fw-bold);
+}
+
+input {
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--clr-accent-300);
+}
+
+@media (max-width: 599px) {
+  main {
+    text-align: center;
+  }
+}
+
+@media (min-width: 600px) {
+  h1, h2, h3 {
+    font-size: var(--fs-800);
+  }
+}

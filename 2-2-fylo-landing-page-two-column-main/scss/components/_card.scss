@@ -1,0 +1,15 @@
+.card {
+  background-color: #fff;
+  font-size: var(--fs-200);
+  text-align: left;
+  padding: 1.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 20px hsla(0, 0%, 75%, 0.25);
+  max-width: 45ch;
+}
+
+@media (max-width: 599px) {
+  .card {
+    margin-inline: auto;
+  }
+}

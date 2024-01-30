@@ -1,0 +1,14 @@
+.button {
+  font-weight: bold;
+  background-color: var(--clr-accent-400);
+  color: var(--clr-neutral-100);
+  border: 0;
+  border-radius: 0.25rem;
+  padding: 0.5rem 4rem;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus-visible {
+  background-color: var(--clr-accent-300);
+}
