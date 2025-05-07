@@ -1,0 +1,39 @@
+:root {
+  --clr-white: hsl(0, 0%, 100%);
+
+  --clr-slate-300: hsl(212, 45%, 89%);
+  --clr-slate-500: hsl(216, 15%, 48%);
+  --clr-slate-900: hsl(218, 44%, 22%);
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background-color: var(--clr-slate-300);
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-family: "Outfit", sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.card {
+  max-width: 290px;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--clr-white);
+  color: var(--clr-slate-900);
+  text-align: center;
+}
+
+.card-img {
+  border-radius: 10px;
+}
